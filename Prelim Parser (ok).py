@@ -45,7 +45,7 @@ def parser(first, last, string):
 
      
 # For Old Republic Title syntax
-if 'old republic title' in prelim[:12000].lower():
+if 'old republic title' in prelim[:100].lower():
     
     title_company = 'Old Republic Title'
     
@@ -64,7 +64,7 @@ if 'old republic title' in prelim[:12000].lower():
                           
    
 # For First American syntax
-elif 'first american' in prelim[:12000].lower():
+elif 'first american' in prelim[:100].lower():
     
     title_company = 'First American Title'
     
@@ -81,7 +81,7 @@ elif 'first american' in prelim[:12000].lower():
               'Order Number:']
    
 # for Stewart Title    
-elif 'stewart title' in prelim[:12000].lower():
+elif 'stewart title' in prelim[:100].lower():
     
     title_company = 'Stewart Title Company'
     
@@ -191,4 +191,4 @@ if response.lower() in ['y', 'yes']:
     mail.Send()
     
 else:
-    print('\n' + 'well fuck you then')
+    print('\n' + 'ok.')
